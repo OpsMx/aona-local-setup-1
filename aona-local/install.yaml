@@ -662,7 +662,9 @@ stringData:
       gate:
         url: http://oes-gate:8084
       carinamanager:
-        url: "http://oes-carina:8092"
+        url: "http://oes-carina"
+        managerport: 8091
+        rbacport: 8092
       approvalGate:
         apiUrl: https://ISD.REPLACE.THIS.WITH.YOURCOMPANY.COM/gate/visibilityservice/v5/approvalGates/{id}/trigger
     
