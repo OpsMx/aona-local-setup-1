@@ -33373,7 +33373,7 @@ spec:
             done;
             echo 'OESDB OK ✓'
       containers:
-      - image: quay.io/opsmxpublic/ubi8-oes-autopilot:v4.1.2.1-rc2
+      - image: quay.io/opsmxpublic/ubi8-oes-autopilot:v4.1.2.1-rc3
         imagePullPolicy: IfNotPresent
         name: oes-autopilot
         env:
@@ -33717,7 +33717,7 @@ spec:
             done;
             echo 'OESDB OK ✓'
       containers:
-      - image: quay.io/opsmxpublic/ubi8-oes-platform:v4.1.2.1-rc2
+      - image: quay.io/opsmxpublic/ubi8-oes-platform:v4.1.2.1-rc3
         name: oes-platform
         env:
         - name: JAVA_OPTS
@@ -33814,7 +33814,7 @@ spec:
             done;
             echo 'OESDB OK ✓'
       containers:
-      - image: quay.io/opsmxpublic/ubi8-oes-sapor:v4.1.2.1-rc2
+      - image: quay.io/opsmxpublic/ubi8-oes-sapor:v4.1.2.1-rc3
         name: oes-sapor
         env:
         - name: JAVA_OPTS
@@ -33909,7 +33909,7 @@ spec:
         chart: "isdargo-4.1.2"
     spec:
       containers:
-      - image: quay.io/opsmxpublic/ubi8-oes-ui:v4.1.2.1-rc2
+      - image: quay.io/opsmxpublic/ubi8-oes-ui:v4.1.2.1-rc3
         name: oes-ui
         env:
         - name: JAVA_OPTS
@@ -34131,7 +34131,7 @@ spec:
               path: vela-api.yaml
           defaultMode: 420
       containers:
-      - image: quay.io/opsmxpublic/vela-api:v1.3.0
+      - image: quay.io/opsmxpublic/vela-api:v1.3.1
         imagePullPolicy: IfNotPresent
         name: vela
         ports:
