@@ -10,7 +10,7 @@ data:
     passScore: 90
     serviceList: 
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-      baselineMetricScope: "opsmx-argo,.*{{env.STABLE_POD_HASH}}.*,oes"
-      canaryMetricScope: "opsmx-argo,.*{{env.LATEST_POD_HASH}}.*,oes"
+      baselineMetricScope: "isd,.*{{env.STABLE_POD_HASH}}.*,oes"
+      canaryMetricScope: "isd,.*{{env.LATEST_POD_HASH}}.*,oes"
       metricTemplateName: "prometheus-health-validator"
       serviceName: oes-sapor

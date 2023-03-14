@@ -10,7 +10,7 @@ data:
     passScore: 90
     serviceList: 
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-      baselineMetricScope: "opsmx-argo,.*{{env.STABLE_POD_HASH}}.*,DEPLOY-LABEL"
-      canaryMetricScope: "opsmx-argo,.*{{env.LATEST_POD_HASH}}.*,DEPLOY-LABEL"
+      baselineMetricScope: "isd,.*{{env.STABLE_POD_HASH}}.*,DEPLOY-LABEL"
+      canaryMetricScope: "isd,.*{{env.LATEST_POD_HASH}}.*,DEPLOY-LABEL"
       metricTemplateName: "prometheus-health-validator"
       serviceName: DEPLOY-NAME

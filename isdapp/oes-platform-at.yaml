@@ -16,11 +16,9 @@ spec:
             template:
               spec:
                 serviceAccountName: isd411
-                imagePullSecrets:
-                - name: opsmx11-secret
                 containers:
                 - name: opsmx-analysis-container
-                  image: 'quay.io/opsmxpublic/argo-isd-metric-provider-job:v1.1.9' 
+                  image: 'quay.io/opsmxpublic/argo-isd-metric-provider-job:v1.2.5' 
                   imagePullPolicy: Always
                   env:
                     - name: MY_POD_NAME
