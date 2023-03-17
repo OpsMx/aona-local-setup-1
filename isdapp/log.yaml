@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logyml
+data:
+  elklogtemp: |
+    monitoringProvider: ELASTICSEARCH
+    accountName: elkjan05
+    index: opsmx-argo-*
+    responseKeywords: log,message
