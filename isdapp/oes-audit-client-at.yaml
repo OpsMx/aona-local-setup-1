@@ -45,6 +45,8 @@ spec:
                 - name: gitopstemplates
                   configMap:
                         name: metrixtemplates
+                  configMap:
+                        name: logyml
                 - name: secret-config-volume
                   secret:
                     secretName: opsmx-profile
