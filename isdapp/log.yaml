@@ -5,6 +5,6 @@ metadata:
 data:
   elklogtemp: |
     monitoringProvider: ELASTICSEARCH
-    accountName: elkjan05
+    accountName: Elasticsearch
     index: opsmx-argo-*
     responseKeywords: log,message
