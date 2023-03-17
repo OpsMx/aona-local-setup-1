@@ -43,9 +43,11 @@ spec:
                   configMap:
                     name: oes-audit-client
                 - name: gitopstemplates
-                  configMap:
+                  projected:
+                    sources:
+                    - configMap:
                         name: metrixtemplates
-                  configMap:
+                    - configMap:
                         name: logyml
                 - name: secret-config-volume
                   secret:
