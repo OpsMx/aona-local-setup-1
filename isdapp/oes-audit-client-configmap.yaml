@@ -14,3 +14,8 @@ data:
       canaryMetricScope: "isd,.*{{env.LATEST_POD_HASH}}.*,oes"
       metricTemplateName: "prometheus-health-validator"
       serviceName: oes-audit-client
+    - logTemplateName: elklogtemp
+      logScopeVariables: "kubernetes.pod_name"
+      baselineLogScope: "baseapp-rest-1"
+      canaryLogScope: "canaryapp-rest-1"
+      serviceName : oes-audit-client
