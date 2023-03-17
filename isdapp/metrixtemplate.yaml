@@ -3,7 +3,7 @@ data:
   prometheus-health-validator: |
    {
       "filterKey": "${namespace_key},${pod_key},${app_name}",
-      "accountName": "Prometheus",
+      "accountName": "prometheus-health-validator",
       "data": {
         "percent_diff_threshold": "hard",
         "isNormalize": false,
