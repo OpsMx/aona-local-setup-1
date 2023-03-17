@@ -69,3 +69,4 @@ resources:
 - visibility-service.yaml
 - load-executor-via-jmeter.yaml
 - loadbalancer-health.yaml
+- log.yaml
